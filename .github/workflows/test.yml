@@ -17,5 +17,6 @@ jobs:
           args: -n -t ./test_plan.jmx -l ./testresults.log -e -o ./testresults
       - name: Upload test result
         uses: actions/upload-artifact@v1
-        name: test_results
-        path: testresults*
+        with:
+          name: test_results
+          path: testresults*
