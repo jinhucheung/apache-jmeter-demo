@@ -1,5 +1,7 @@
 name: JMeter Test
 
+on: push
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
